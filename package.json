@@ -1,0 +1,17 @@
+{
+  "name": "item-catalog",
+  "version": "1.0.0",
+  "description": "This project creates a RESTful API using Mongodb, Node.js/Express, and MongoJS Make GET, POST, PUT, and DELETE requests to this API",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "*",
+    "mongojs": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

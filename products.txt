@@ -1,0 +1,142 @@
+INSERT PRODUCTS BELOW INTO THE MONGO SHELL IN TERMINAL
+
+db.products.insert({
+    name: "Amazon Echo Dot",
+    category: "Electronics",
+    model: "DOTBLACK",
+    sku: "5578851",
+    img: "http://cdn.bgr.com/2016/03/amazon-echo-dot.png",
+    price: 49.99,
+    pickup_available: true,
+    description: "Voice-controlled; cloud based Alexa Voice Service; Bluetooth connectivity or 3.5 mm stereo cable to play music; compatible with WeMo, Philips Hue, Samsung SmartThings, Nest, ecobee, and others; 7 far-field microphones; built-in speaker",
+    release_date: ISODate("2015-09-01"),
+    specifications: {
+        height: "1.5 inches",
+        widht: "3.3 inches",
+        depth: "3.3 inches",
+        weight: "0.36 pounds"
+    },
+    reviews: [
+        {
+            subject: "Great!",
+            body: "This is my first echo, and I really like it. The price is great and I am using it to work with my WINK hub to control the lights in my house by voice. I'm also using it to work with my google calendar and weather. It was easy to setup and was up and running quickly!",
+            rating: "4.5",
+            user: "novacharter",
+            date: ISODate("2015-09-02"),
+            recommend: true
+        },
+        {
+            subject: "Almost better than an Echo",
+            body: "I have an Echo and while the sound is better than the Dot, the Dot does everything the Echo does. The one criticism about the Echo seemed to be the inability to connect it to external speakers. Well you can do that with a dot. You can even connect it to a stereo system. Thank you Amazon.",
+            rating: "5",
+            user: "DJMN",
+            date: ISODate("2016-10-25"),
+            recommend: true
+        },
+        {
+            subject: "Just what I needed",
+            body: "Had been looking at the reviews for the Amazon Echo but wasn't crazy about the price. Along came the Dot which does everything the Echo does at a much lower cost. I did try both versions at my local Best Buy and there is a huge difference in the sound but the Dot can hook up to your bluetooth speaker which fixes the sound issue. Very happy with my Dot.",
+            rating: "2",
+            user: "Zofo",
+            date: ISODate("2016-10-26"),
+            recommend: false
+        }
+    ],
+    protection_services: ['damage', 'battery', 'power']
+});
+
+
+db.products.insert({
+    name: "iPhone 7 Plus",
+    category: "Electronics",
+    model: "MNQH2LL/A",
+    sku: "5580889",
+    img: "http://store.storeimages.cdn-apple.com/4973/as-images.apple.com/is/image/AppleInc/aos/published/images/c/om/compare/iphone/compare-iphone-7plus-201609?wid=326&hei=350&fmt=png-alpha&qlt=95&.v=1472675183888",
+    price: 869.99,
+    pickup_available: true,
+    description: "iPhone 7 Plus features Dual 12MP cameras for high-resolution zoom and an ƒ/1.8 aperture for great low-light photos and 4K video. Optical image stabilization. A 5.5-inch Retina HD display with wide color and 3D Touch. An A10 Fusion chip for up to 2x faster performance than iPhone 6. Touch ID. Faster LTE. The longest battery life in an iPhone. Immersive stereo sound, splash and water resistant, and iOS 10.",
+    release_date: ISODate("2015-09-01"),
+    specifications: {
+        wireless_technology: "4G LTE",
+        height: "6.23 inches",
+        widht: "3.07 inches",
+        depth: "0.29 inches",
+        weight: "6.63 ounces",
+        display_type: "Retina Display"
+    },
+    reviews: [
+        {
+            subject: "Big adjustment from 5s to 7plus",
+            body: "Hard to text with only 1 hand. Love the camera. Battery life lasts a lot longer than my 5s.",
+            rating: "3",
+            user: "Newtotheplus",
+            date: ISODate("2016-10-28"),
+            recommend: false
+        },
+        {
+            subject: "Worthy upgrade if you had a 6 plus(non S)",
+            body: "I came from the 6 not the (6s) so with the incentives from BB and relative price/value it was worth the upgrade. I've doubled my storage, increased speeds, better sound, faster navigation, better camera. Cons - looks exactly like my 6 and fit in the same case. LOL. not digging the only bluetooth part. I would wait if you have a 6s plus for next years.",
+            rating: "4",
+            user: "36yrOldGamer",
+            date: ISODate("2016-10-18"),
+            recommend: true
+        },
+        {
+            subject: "Great camera",
+            body: "This phone is the new generation. It is so awesome. I would recommend this to anybody.",
+            rating: "5",
+            user: "Amaya",
+            date: ISODate("2016-09-23"),
+            recommend: true
+        }
+    ],
+    protection_services: ['damage', 'battery', 'power']
+});
+
+
+-----------------------------------------------------------------------------------------------
+ADD PRODUCT BELOW IN POSTMAN WHEN MAKING THE POST REQUEST AT LOCALHOST/PRODUCTS/
+REQUEST: POST
+URL: http://localhost:3000/products/
+
+{
+    "name": "Xbox One S",
+    "category": "Electronics",
+    "model": "ZQ9-00028",
+    "sku": "5613745",
+    "img": "http://cdn.pocket-lint.com/r/s/970x/assets/images/phpeswt4f.jpg",
+    "price": 299.99,
+    "pickup_available": true,
+    "description": "Own the Xbox One S Battlefield™ 1 Bundle (500GB), featuring 4K Blu-ray™, 4K video streaming, High Dynamic Range, a full game download of Battlefield™ 1, and one month of EA Access. Discover a world at war through an adventure-filled campaign, or join in epic multiplayer battles with up to 64 players on Xbox Live. Fight as infantry or take control of amazing vehicles on land, air and sea, and adapt your gameplay to the most dynamic battles in Battlefield history. And with EA Access, play EA games for a limited time before they're released and get unlimited access to The Vault, exclusively on Xbox One. With over 100 console exclusives, and a growing library of Xbox 360 games, there's never been a better time to game with Xbox One.",
+    "specifications": {
+        "hard_drive_capacity": "500 gigabytes",
+        "internet_connectable": true,
+        "graphic_quality": "1080p"
+    },
+    "reviews": [
+        {
+            "subject": "It's new and improved.",
+            "body": "Been away from gaming For couple years . Gears of war 4 and battlefield 1 coming out perfect time for me to jump back in. Had the original Xbox one. The Xbox one S is so much sweeter. Love the smaller size and look of the new console. Always been Xbox fan and with the Xbox one S Microsoft keeps improving. I don't have a 4K tv but not really interested in that. Gears of war 4 and battlefield 1 still look gorgeous on my HD TV.",
+            "rating": "5",
+            "user": "Mentallo",
+            "recommend": true
+        },
+        {
+            "subject": "Great system",
+            "body": "Great system and runs smooth and the games look good.",
+            "rating": "5",
+            "user": "nick18",
+            "recommend": true
+        },
+        {
+            "subject": "Xbox one s great price",
+            "body": "Great price for Xbox one s. Can't go wrong for $300 for games and 4K movies.",
+            "rating": "3",
+            "user": "Mike",
+            "recommend": true
+        }
+    ]
+}
+
+-----------------------------------------------------------------------------------------------
+
